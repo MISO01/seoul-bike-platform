@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서울시 공공자전거 정책지원 플랫폼 - 따릉따릉팀</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* 스타일 생략 - 실제 파일에는 모든 스타일 포함 */
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar py-3 px-6 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="images/seoul_logo.svg" alt="서울특별시 로고" class="h-10">
+        </div>
+        <div class="hidden md:flex">
+            <div class="nav-item" onclick="showSection('landing')">홈</div>
+            <div class="nav-item" onclick="showSection('districts')">지역 선택</div>
+            <div class="nav-item" onclick="showSection('station-detail')">대여소 상세</div>
+            <div class="nav-item" onclick="showSection('ai-agent')">AI 정책 도우미</div>
+            <div class="nav-item" onclick="showSection('admin')">관리자</div>
+        </div>
+        <div class="md:hidden">
+            <button class="p-2" onclick="toggleMobileMenu()" title="메뉴 열기">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <footer class="bg-gray-800 text-white py-8 px-4">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">서울시 공공자전거 정책지원 플랫폼</h3>
+                    <p class="text-gray-300 text-sm">
+                        2025 국토교통부 데이터 활용 경진대회 참가 프로젝트<br>
+                        공공자전거 정책 결정을 위한 데이터 분석 플랫폼
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">데이터 출처</h3>
+                    <ul class="text-gray-300 text-sm space-y-2">
+                        <li>서울 열린데이터 광장</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">연락처</h3>
+                    <p class="text-gray-300 text-sm">
+                        이메일: khubikeseoul@gmail.com<br>
+                        따릉따릉팀(경희대 빅데이터 석사과정 1기팀)<br>
+                        © 2025 서울시 공공자전거 정책지원 플랫폼
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

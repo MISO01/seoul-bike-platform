@@ -1,0 +1,80 @@
+:root {
+    --primary: #15AD58;
+    --primary-dark: #0E8C46;
+    --secondary: #1D64A6;
+    --secondary-dark: #0F4876;
+    --gray-dark: #454545;
+    --gray-medium: #767676;
+    --gray-light: #E5E5E5;
+    --white: #FFFFFF;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.section {
+    min-height: 100vh;
+    padding: 40px 0;
+    display: none;
+}
+.section.active {
+    display: block;
+}
+#landing {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://www.seoul.go.kr/res_map/images/bg_map_new.png');
+    background-size: cover;
+    background-position: center;
+}
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+    padding: 12px 24px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+.btn-secondary {
+    background-color: var(--secondary);
+    color: white;
+    padding: 12px 24px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+.btn-secondary:hover {
+    background-color: var(--secondary-dark);
+}
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s;
+}
+.card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+.status-card {
+    background-color: var(--primary);
+    color: white;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.nav-item {
+    cursor: pointer;
+    padding: 10px 15px;
+    color: var(--gray-dark);
+    transition: all 0.3s;
+    border-bottom: 2px solid transparent;
+}
+.nav-item:hover, .nav-item.active {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+}
